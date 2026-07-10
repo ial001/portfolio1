@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ช่องทางการติดต่อ | My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .page-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+        .contact-wrapper {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        /* ฝั่งข้อมูลการติดต่อ */
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .contact-info h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .contact-method {
+            margin-bottom: 20px;
+        }
+        .contact-method strong {
+            color: #2c3e50;
+            display: block;
+            font-size: 16px;
+        }
+        .contact-method p {
+            font-size: 15px;
+            color: #7f8c8d;
+            margin-bottom: 0;
+        }
+        /* ฝั่งฟอร์มส่งข้อความ */
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .contact-form h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .submit-btn {
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">ประวัติการศึกษา</a></li>
+                <li><a href="awards.html">เกียรติบัตรและรางวัล</a></li>
+                <li><a href="contact.html" class="active">ช่องทางการติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="page-title">ช่องทางการติดต่อ (Contact Me)</h2>
+
+        <div class="contact-wrapper">
+            
+            <div class="contact-info">
+                <h3>ข้อมูลติดต่อ</h3>
+                
+                <div class="contact-method">
+                    <strong>📧 อีเมล (Email)</strong>
+                    <p>yourname@email.com</p>
+                </div>
+
+                <div class="contact-method">
+                    <strong>📞 เบอร์โทรศัพท์ (Phone)</strong>
+                    <p>09X-XXX-XXXX</p>
+                </div>
+
+                <div class="contact-method">
+                    <strong>📱 Social Media</strong>
+                    <p>Facebook: Your Facebook</p>
+                    <p>Instagram: @your_ig</p>
+                    <p>Line ID: your_line_id</p>
+                </div>
+
+                <div class="contact-method">
+                    <strong>📍 ที่อยู่ (Address)</strong>
+                    <p>จังหวัด [ชลบุรี], ประเทศไทย</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>ส่งข้อความหาฉัน</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">0957530081</label>
+                        <input type="text" id="name" name="name" placeholder="ฐนดล นาทันคิด" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">อีเมลกลับ</label>
+                        <input type="email" id="email" name="email" placeholder="thanabloaz555@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">ข้อความ</label>
+                        <textarea id="message" name="message" placeholder="พิมพ์ข้อความที่นี่..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">ส่งข้อความ</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 เว็บไซต์พอร์ตโฟลิโอของฉัน. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
