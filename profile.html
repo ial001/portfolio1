@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัว | My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* สไตล์เฉพาะสำหรับหน้าประวัติส่วนตัวเพื่อความสวยงาม */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .profile-container {
+            display: flex;
+            gap: 40px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .profile-info h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .profile-info ul {
+            list-style: none;
+        }
+        .profile-info ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .profile-info ul li strong {
+            color: #2c3e50;
+        }
+        /* ส่วนของทักษะ (Skills) */
+        .skills-section {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .skill-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html" class="active">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">ประวัติการศึกษา</a></li>
+                <li><a href="awards.html">เกียรทีบัตรและรางวัล</a></li>
+                <li><a href="contact.html">ช่องทางการติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="profile-container">
+            <img src="images/profile-placeholder.png" alt="รูปภาพของฉัน" style="width: 200px; height: 200px; border-radius: 10px; object-fit: cover;">
+            <div class="profile-info">
+                <h2>ข้อมูลส่วนตัว (About Me)</h2>
+                <ul>
+                    <li><strong>ชื่อ-นามสกุล:</strong> นาย [ใส่ชื่อจริง-นามสกุล]</li>
+                    <li><strong>ชื่อเล่น:</strong> [ใส่ชื่อเล่น]</li>
+                    <li><strong>วันเกิด:</strong> [ใส่ วัน/เดือน/ปีเกิด]</li>
+                    <li><strong>แผนการเรียน:</strong> [เช่น วิทยาศาสตร์-คณิตศาสตร์ / ศิลป์-คำนวณ]</li>
+                    <li><strong>งานอดิเรก:</strong> [เช่น เขียนโปรแกรม, อ่านหนังสือ, เล่นกีฬา]</li>
+                    <li><strong>คติพจน์ประจำใจ:</strong> [ใส่คติพจน์ที่ชอบ]</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skills-section">
+            <h2>ทักษะและความสามารถ (Skills)</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>HTML / CSS</h4>
+                    <p style="font-size: 14px; margin-top: 5px; color:#7f8c8d;">ระดับ: พื้นฐาน</p>
+                </div>
+                <div class="skill-card">
+                    <h4>ภาษาอังกฤษ</h4>
+                    <p style="font-size: 14px; margin-top: 5px; color:#7f8c8d;">ระดับ: สื่อสารได้</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Microsoft Office</h4>
+                    <p style="font-size: 14px; margin-top: 5px; color:#7f8c8d;">ระดับ: คล่องแคล่ว</p>
+                </div>
+                <div class="skill-card">
+                    <h4>[ทักษะอื่นๆ ของน้อง]</h4>
+                    <p style="font-size: 14px; margin-top: 5px; color:#7f8c8d;">ระดับ: [ระบุระดับ]</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 เว็บไซต์พอร์ตโฟลิโอของฉัน. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
