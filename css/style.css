@@ -1,0 +1,122 @@
+/* ล้างค่าเริ่มต้นของ Browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- แถบเมนูนำทาง (Navigation Bar) --- */
+header {
+    background-color: #2c3e50;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #b0bec5;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #fff;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+/* --- ส่วนเนื้อหาหลัก (Hero Section) --- */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 140px); /* หักลบความสูง header และ footer */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* ทำรูปเป็นวงกลม */
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* ปุ่มกด */
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* --- ส่วนท้ายเว็บ (Footer) --- */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
