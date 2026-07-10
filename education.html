@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติการศึกษา | My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .page-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+        /* โครงสร้าง Timeline */
+        .timeline {
+            position: relative;
+            border-left: 3px solid #3498db;
+            padding-left: 30px;
+            margin-left: 20px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        /* จุดวงกลมบนเส้น Timeline */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -37px;
+            top: 5px;
+            background: #3498db;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 3px #3498db;
+        }
+        .timeline-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .timeline-year {
+            font-size: 14px;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 5px;
+        }
+        .timeline-card h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .timeline-card p {
+            font-size: 15px;
+            color: #7f8c8d;
+            margin-bottom: 0;
+        }
+        .gpax {
+            display: inline-block;
+            background: #e8f4fd;
+            color: #2980b9;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html" class="active">ประวัติการศึกษา</a></li>
+                <li><a href="awards.html">เกียรติบัตรและรางวัล</a></li>
+                <li><a href="contact.html">ช่องทางการติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="page-title">ประวัติการศึกษา (Education)</h2>
+
+        <div class="timeline">
+            
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-year">พ.ศ. 2567 - ปัจจุบัน</div>
+                    <h3>มัธยมศึกษาตอนปลาย (ม.4 - ม.6)</h3>
+                    <p>โรงเรียน: [พานทอง ชลบุรี]</p>
+                    <p>แผนการเรียน: [ใส่แผนการเรียน วิทย์-คณิต / ศิลป์-ทั่วไป]</p>
+                    <div class="gpax">GPAX (5 เทอม): [ใส่เกรดเฉลี่ย 2.50 ]</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-year">พ.ศ. 2564 - 2566</div>
+                    <h3>มัธยมศึกษาตอนต้น (ม.1 - ม.3)</h3>
+                    <p>โรงเรียน: [วัดดอนดำรงธรรม ชลบุรี]</p>
+                    <div class="gpax">GPAX: [ใส่เกรดเฉลี่ย 3.00]</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-year">พ.ศ. 2558 - 2563</div>
+                    <h3>ประถมศึกษา (ป.1 - ป.6)</h3>
+                    <p>โรงเรียน: [นิธิปริณญา กรุงเทพมหานคร]</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 เว็บไซต์พอร์ตโฟลิโอของฉัน. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
